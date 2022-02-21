@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  /* Colors*/
+  --white: hsl(0, 0%, 100%);
+  --bg-color: hsl(212, 45%, 89%);
+  --text-color: hsl(220, 15%, 55%);
+  --title-color: hsl(218, 44%, 22%);
+
+  /* Font-family*/
+  --ff: "Outfit", sans-serif;
+
+  /* Font-size*/
+  --fs-normal: 1.6rem;
+  --fs-big: 2.2rem;
+
+  /* Font-weight*/
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff);
+}
+
+.content {
+  align-items: center;
+  background-color: var(--bg-color);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.c-card {
+  background-color: var(--white);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+}
+
+.c-card__image {
+  border-radius: 1rem;
+}
+
+.c-card__content {
+  text-align: center;
+}
+
+.c-card__title {
+  color: var(--title-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-big);
+  line-height: 2.8rem;
+  margin: 1.6rem 0;
+}
+
+.c-card__text {
+  margin: auto;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: var(--fw-regular);
+  line-height: 1.9rem;
+  letter-spacing: 0.2px;
+  max-width: 26.5rem;
+}
